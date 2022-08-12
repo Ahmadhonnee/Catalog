@@ -2,3 +2,31 @@
 @import "./variables";
 @import "./fonts";
 @import "./blocks";
+.card__logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    &__icon{
+        width: 25px;
+        height: 25px;
+        background: url(../img/calendar-clear.png) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+.card__rate{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    &__icon{
+        width: 25px;
+        height: 25px;
+        background: url(../img/star.png) no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
