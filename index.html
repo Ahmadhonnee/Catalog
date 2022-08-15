@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Bootstrap</title>
 </head>
 
 <body>
-    <div class="container pb-5 pt-5">
+    <div class="container pb-5 pt-5 bg-body">
         <div class="row">
             <h1 class="fw-bold h1 text-center">Movies catalog</h1>
             <div class="col-4">
@@ -35,7 +35,7 @@
                         <option value="Middle">Middle</option>
                         <option value="Low">Low</option>
                     </select>
-                    <button class="btn btn-primary w-100 mt-4">Search</button>
+                    <button class="btn btn-qizil w-100 mt-4">Search</button>
                 </form>
                 <h2 class="h2 text-center mt-4">Bookmatked movies</h2>
                 <div class="row">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="col-12 pt-3 pb-3 border border-dark border-opacity-25 d-flex flex-column rounded-bottom">
                         12 Years a Slave
-                        <button class="btn btn-danger w-25 mt-3">Remove</button>
+                        <button class="btn btn-sariq w-25 mt-3">Remove</button>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,32 @@
                 </div>
                 <div class="d-flex justify-content-between">
                     <div class="card" style="width: 25rem;">
-                        <img src="./img/OIP.jpg" class="card-img-top" alt="...">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="./img/OIP.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./img/R.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./img/OIP.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
                         <div class="card-body">
                             <h3 class="card-title">Avengers: Infinity War</h3>
                             <div class="card__logo">
@@ -72,13 +97,38 @@
                                 <div class="card__rate__icon"></div>
                                 <span class="card__rate__name">8.7</span>
                             </div>
-                            <a href="#" class="btn btn-sm btn-outline-primary">Watch trailer</a>
-                            <a href="#" class="btn btn-sm btn-outline-secondary">More info</a>
-                            <a href="#" class="btn btn-sm btn-outline-success">Bookmark</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Watch trailer</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">More info</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Bookmark</button>
                         </div>
                     </div>
                     <div class="card" style="width: 25rem;">
-                        <img src="./img/R.jpg" class="card-img-top" alt="...">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="./img/R.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./img/OIP.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./img/R.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
                         <div class="card-body">
                             <h3 class="card-title">The Avengers</h3>
                             <div class="card__logo">
@@ -89,9 +139,9 @@
                                 <div class="card__rate__icon"></div>
                                 <span class="card__rate__name">8.1</span>
                             </div>
-                            <a href="#" class="btn btn-sm btn-outline-primary">Watch trailer</a>
-                            <a href="#" class="btn btn-sm btn-outline-secondary">More info</a>
-                            <a href="#" class="btn btn-sm btn-outline-success">Bookmark</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Watch trailer</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">More info</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Bookmark</button>
                         </div>
                     </div>
                 </div>
@@ -106,7 +156,24 @@
             </div>
         </div>
     </div>
-    <script src="./js/bootstrap.min.js"></script>
+    <div class="modal fade bg-black text-black" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sub???</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              HEy buddy calm down!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-sariq" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-qizil">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

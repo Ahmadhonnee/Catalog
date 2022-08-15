@@ -1,6 +1,19 @@
-@import "./general";
-@import "./variables";
-@import "./fonts";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/variables";
+$btn-border-radius: 10px;
+$body-bg: green;
+$body-color:white;
+$card-bg: cyan;
+$theme-colors:(
+    'qizil':rgb(99, 1, 1),
+    'sariq':yellow,
+    'danger':rgb(245, 87, 87),
+    'light':rgb(212, 212, 212)
+);  
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
 @import "./blocks";
 .card__logo{
     display: flex;
